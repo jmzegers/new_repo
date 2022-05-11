@@ -93,33 +93,33 @@
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints">
 
-    <!--        <Button-->
-    <!--            android:id="@+id/from_homepagae_to_misPichangas"-->
-    <!--            android:layout_width="102dp"-->
-    <!--            android:layout_height="match_parent"-->
-    <!--            android:backgroundTint="@color/button_defect"-->
-    <!--            android:text="Mis Pichangas"-->
-    <!--            android:textSize="10sp"-->
-    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--            app:strokeWidth="1sp" />-->
+            <Button
+                android:id="@+id/from_homepagae_to_misPichangas"
+                android:layout_width="102dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/button_defect"
+                android:text="Mis Pichangas"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:strokeWidth="1sp" />
 
-    <!--        <Button-->
-    <!--            android:id="@+id/from_homepage_to_buscarPichangas"-->
-    <!--            android:layout_width="101dp"-->
-    <!--            android:layout_height="match_parent"-->
-    <!--            android:backgroundTint="@color/button_defect"-->
-    <!--            android:text="Buscar Pichangas"-->
-    <!--            android:textSize="10sp"-->
-    <!--            app:strokeWidth="1sp" />-->
+            <Button
+                android:id="@+id/from_homepage_to_buscarPichangas"
+                android:layout_width="101dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/button_defect"
+                android:text="Buscar Pichangas"
+                android:textSize="10sp"
+                app:strokeWidth="1sp" />
 
-    <!--        <Button-->
-    <!--            android:id="@+id/from_homepagae_to_crearPichanga"-->
-    <!--            android:layout_width="102dp"-->
-    <!--            android:layout_height="match_parent"-->
-    <!--            android:backgroundTint="@color/button_defect"-->
-    <!--            android:text="Crear Pichangas"-->
-    <!--            android:textSize="10sp"-->
-    <!--            app:strokeWidth="1sp" />-->
+            <Button
+                android:id="@+id/from_homepagae_to_crearPichanga"
+                android:layout_width="102dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/button_defect"
+                android:text="Crear Pichangas"
+                android:textSize="10sp"
+                app:strokeWidth="1sp" />
 
             <Button
                 android:id="@+id/homepage"
