@@ -79,7 +79,8 @@
         android:layout_weight="99"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="-3dp"
-        tools:layout_editor_absoluteY="62dp">
+        tools:layout_editor_absoluteY="62dp"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/date"

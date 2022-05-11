@@ -10,45 +10,44 @@
             type="cl.uandes.pichangapp.ui.viewmodel.Utility.CreatePichangasViewModel" />
     </data>
 
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#BF016FA0"
     tools:context=".Create_pichanga">
 
-<!--    <LinearLayout-->
-<!--        android:id="@+id/linearLayout2"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="90dp"-->
-<!--        android:gravity="center"-->
-<!--        android:orientation="horizontal"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        tools:ignore="MissingConstraints">-->
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
 
-<!--        <Button-->
-<!--            android:id="@+id/from_create_to_homepage"-->
-<!--            android:layout_width="180dp"-->
-<!--            android:layout_height="60dp"-->
-<!--            android:backgroundTint="@color/button_defect"-->
-<!--            android:text="Volver"-->
-<!--            android:textSize="14sp"-->
-<!--            tools:layout_editor_absoluteX="16dp"-->
-<!--            tools:layout_editor_absoluteY="650dp" />-->
+        <Button
+            android:id="@+id/from_create_to_homepage"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/button_defect"
+            android:text="Volver"
+            android:textSize="14sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="650dp"
+            tools:ignore="MissingConstraints" />
 
-<!--        <Button-->
-<!--            android:id="@+id/from_create_to_voucher"-->
-<!--            android:layout_width="180dp"-->
-<!--            android:layout_height="60dp"-->
-<!--            android:backgroundTint="@color/button_defect"-->
-<!--            android:text="Registrar"-->
-<!--            android:textSize="14sp"-->
-<!--            tools:layout_editor_absoluteX="205dp"-->
-<!--            tools:layout_editor_absoluteY="650dp" />-->
-<!--    </LinearLayout>-->
+        <Button
+            android:id="@+id/from_create_to_voucher"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/button_defect"
+            android:text="Registrar"
+            android:textSize="14sp"
+            tools:layout_editor_absoluteX="205dp"
+            tools:layout_editor_absoluteY="650dp" />
+    </LinearLayout>
 
     <CalendarView
         android:id="@+id/calendarView"

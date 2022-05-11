@@ -82,16 +82,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:strokeColor="#016FA0" />
 
-    <!--    <LinearLayout-->
-    <!--        android:id="@+id/linearLayout2"-->
-    <!--        android:layout_width="0dp"-->
-    <!--        android:layout_height="90dp"-->
-    <!--        android:orientation="horizontal"-->
-    <!--        android:gravity="center"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        tools:ignore="MissingConstraints">-->
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
 
     <!--        <Button-->
     <!--            android:id="@+id/from_homepagae_to_misPichangas"-->
@@ -121,15 +121,15 @@
     <!--            android:textSize="10sp"-->
     <!--            app:strokeWidth="1sp" />-->
 
-    <!--        <Button-->
-    <!--            android:id="@+id/homepage"-->
-    <!--            android:layout_width="102dp"-->
-    <!--            android:layout_height="match_parent"-->
-    <!--            android:backgroundTint="@color/button_selected"-->
-    <!--            android:text="Inicio"-->
-    <!--            android:textSize="10sp"-->
-    <!--            app:strokeWidth="1sp" />-->
-    <!--    </LinearLayout>-->
+            <Button
+                android:id="@+id/homepage"
+                android:layout_width="102dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/button_selected"
+                android:text="Inicio"
+                android:textSize="10sp"
+                app:strokeWidth="1sp" />
+        </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
     </layout>

@@ -24,7 +24,8 @@
         android:layout_marginTop="55dp"
         android:scrollbars="vertical"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
-        tools:layout_editor_absoluteX="0dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints" />
 
     <androidx.constraintlayout.utils.widget.MockView
         android:id="@+id/PichangAPP"
