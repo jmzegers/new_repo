@@ -18,6 +18,7 @@ import cl.uandes.pichangapp.ui.views.contextSituation
 import cl.uandes.pichangapp.R
 import cl.uandes.pichangapp.ui.viewmodel.User.HistoryPichangasViewModel
 import androidx.lifecycle.ViewModelProvider
+import cl.uandes.pichangapp.ui.viewmodel.LogIn.LogInViewModel
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -30,6 +31,7 @@ class History_pichangas : Fragment(), ItemAdapter.ActionListener  {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    private lateinit var viewModel: HistoryPichangasViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -57,6 +59,8 @@ class History_pichangas : Fragment(), ItemAdapter.ActionListener  {
         super.onViewCreated(view, savedInstanceState)
         contextSituation = "history"
         var n = 0
+
+        binding.historyPichangasViewModel = viewModel
 
         val btn1 = view.findViewById<Button>(R.id.from_history_to_rate);
         btn1.setOnClickListener {

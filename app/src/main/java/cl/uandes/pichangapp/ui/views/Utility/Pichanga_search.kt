@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import cl.uandes.pichangapp.data.models.DataMatch
 import cl.uandes.pichangapp.ui.views.*
 import cl.uandes.pichangapp.R
+import cl.uandes.pichangapp.ui.viewmodel.LogIn.LogInViewModel
 import cl.uandes.pichangapp.ui.viewmodel.Utility.SearchPichangasViewModel
 
 // TODO: Rename parameter arguments, choose names that match
@@ -26,6 +27,8 @@ class Pichanga_search : Fragment(), ItemAdapter.ActionListener {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    private lateinit var viewModel: SearchPichangasViewModel
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,6 +57,7 @@ class Pichanga_search : Fragment(), ItemAdapter.ActionListener {
         super.onViewCreated(view, savedInstanceState)
         contextSituation = "search"
         n = 0
+        binding.searchPichangasViewModel = viewModel
 
         //recyclerview
         val fighterListView = binding.fighterListView

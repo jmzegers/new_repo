@@ -17,6 +17,7 @@ import cl.uandes.pichangapp.ui.views.Matchesss
 import cl.uandes.pichangapp.ui.views.elementId
 import cl.uandes.pichangapp.ui.views.contextSituation
 import cl.uandes.pichangapp.R
+import cl.uandes.pichangapp.ui.viewmodel.User.HistoryPichangasViewModel
 import cl.uandes.pichangapp.ui.viewmodel.User.HomepageViewModel
 
 // TODO: Rename parameter arguments, choose names that match
@@ -33,6 +34,7 @@ class Homepage : Fragment(), ItemAdapter.ActionListener   {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    private lateinit var viewModel: HomepageViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -60,6 +62,7 @@ class Homepage : Fragment(), ItemAdapter.ActionListener   {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         contextSituation = "homepage"
+        binding.homepageViewModel = viewModel
         val btn1 = view.findViewById<Button>(R.id.from_homepage_to_login);
         btn1.setOnClickListener {
             elementId = ""

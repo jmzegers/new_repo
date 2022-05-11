@@ -63,6 +63,7 @@ class Register : Fragment() {
         val nameTeamInput = binding.editTextTextPersonName3
         val categoryInput = binding.categoryProfile2
 
+        binding.registerViewModel = viewModel
 
         val btn1 = view.findViewById<Button>(R.id.from_register_to_login);
         btn1.setOnClickListener {

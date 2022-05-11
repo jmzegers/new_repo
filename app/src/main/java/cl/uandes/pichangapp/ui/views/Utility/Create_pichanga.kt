@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import cl.uandes.pichangapp.databinding.CreatePichangaBinding
+import cl.uandes.pichangapp.ui.viewmodel.LogIn.LogInViewModel
 import cl.uandes.pichangapp.ui.views.n
 import cl.uandes.pichangapp.ui.viewmodel.Utility.CreatePichangasViewModel
 
@@ -23,6 +24,8 @@ class Create_pichanga : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    private lateinit var viewModel: CreatePichangasViewModel
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,6 +48,7 @@ class Create_pichanga : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         n = 0
+        binding.createPichangasViewModel = viewModel
     }
 
 

@@ -16,6 +16,7 @@ import cl.uandes.pichangapp.ui.views.ItemAdapter
 import cl.uandes.pichangapp.ui.views.Matchesss
 import cl.uandes.pichangapp.ui.views.contextSituation
 import cl.uandes.pichangapp.R
+import cl.uandes.pichangapp.ui.viewmodel.LogIn.LogInViewModel
 import cl.uandes.pichangapp.ui.views.User.User_pichangas
 import cl.uandes.pichangapp.ui.viewmodel.Utility.RatePichangasViewModel
 
@@ -29,6 +30,8 @@ class Rate_pichangas : Fragment(), ItemAdapter.ActionListener  {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    private lateinit var viewModel: RatePichangasViewModel
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -55,6 +58,7 @@ class Rate_pichangas : Fragment(), ItemAdapter.ActionListener  {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         contextSituation = "rate"
+        binding.ratePichangasViewModel = viewModel
 
         val btn1 = view.findViewById<Button>(R.id.from_rate_to_history);
         btn1.setOnClickListener {

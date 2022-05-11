@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import cl.uandes.pichangapp.data.models.DataMatch
 import cl.uandes.pichangapp.ui.views.*
 import cl.uandes.pichangapp.R
+import cl.uandes.pichangapp.ui.viewmodel.LogIn.LogInViewModel
 import cl.uandes.pichangapp.ui.viewmodel.User.User_PichangasViewModel
 
 // TODO: Rename parameter arguments, choose names that match
@@ -26,6 +27,8 @@ class User_pichangas : Fragment(), ItemAdapter.ActionListener  {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    private lateinit var viewModel: User_PichangasViewModel
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -53,6 +56,7 @@ class User_pichangas : Fragment(), ItemAdapter.ActionListener  {
         super.onViewCreated(view, savedInstanceState)
         contextSituation = "ourPichangas"
         n = 0
+        binding.userPichangasViewModel = viewModel
         val btn1 = view.findViewById<Button>(R.id.from_userpichangas_to_rate);
         btn1.setOnClickListener {
             Navigation.findNavController(it).navigate(R.id.rate_pichangas)

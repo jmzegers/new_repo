@@ -14,6 +14,7 @@ import cl.uandes.pichangapp.ui.views.ProfileUser
 import cl.uandes.pichangapp.ui.views.elementId
 import cl.uandes.pichangapp.ui.views.n
 import cl.uandes.pichangapp.R
+import cl.uandes.pichangapp.ui.viewmodel.LogIn.LogInViewModel
 import cl.uandes.pichangapp.ui.viewmodel.User.ProfileViewModel
 
 // TODO: Rename parameter arguments, choose names that match
@@ -30,6 +31,8 @@ class Profile : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    private lateinit var viewModel: ProfileViewModel
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -58,6 +61,7 @@ class Profile : Fragment() {
         val text3 = view.findViewById<TextView>(R.id.passwordProfile)
         val text4 = view.findViewById<TextView>(R.id.categoryProfile)
         val image = view.findViewById<ImageView>(R.id.equipo)
+        binding.profileViewModel = viewModel
 
         image.setImageResource(R.mipmap.team1)
         val user = users.find { it.nameTeam == elementId }
