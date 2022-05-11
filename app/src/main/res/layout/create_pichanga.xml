@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BF016FA0"
+    tools:context=".Create_pichanga">
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/linearLayout2"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="90dp"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        tools:ignore="MissingConstraints">-->
+
+<!--        <Button-->
+<!--            android:id="@+id/from_create_to_homepage"-->
+<!--            android:layout_width="180dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:backgroundTint="@color/button_defect"-->
+<!--            android:text="Volver"-->
+<!--            android:textSize="14sp"-->
+<!--            tools:layout_editor_absoluteX="16dp"-->
+<!--            tools:layout_editor_absoluteY="650dp" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/from_create_to_voucher"-->
+<!--            android:layout_width="180dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:backgroundTint="@color/button_defect"-->
+<!--            android:text="Registrar"-->
+<!--            android:textSize="14sp"-->
+<!--            tools:layout_editor_absoluteX="205dp"-->
+<!--            tools:layout_editor_absoluteY="650dp" />-->
+<!--    </LinearLayout>-->
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="330dp"
+        android:layout_height="298dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/button_defect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="330dp"
+        android:layout_height="36sp"
+        android:layout_marginTop="48dp"
+        android:background="@color/button_defect"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/calendarView"
+        app:layout_constraintStart_toStartOf="@+id/calendarView" />
+
+    <RadioButton
+        android:id="@+id/radioButton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mixto"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/radioButton7"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="330dp"
+        android:layout_height="36sp"
+        android:layout_marginTop="56dp"
+        android:background="@color/button_defect"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Las reglas establecidas son..."
+        android:inputType="textMultiLine"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton7"
+        tools:layout_editor_absoluteX="41dp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categoría"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/radioButton9"
+        app:layout_constraintStart_toStartOf="@+id/radioButton9" />
+
+    <RadioButton
+        android:id="@+id/radioButton9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="56dp"
+        android:text="Masculino"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+    <RadioButton
+        android:id="@+id/radioButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Femenino"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/radioButton9"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reglas"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lugar"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/spinner2"
+        app:layout_constraintStart_toStartOf="@+id/spinner2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

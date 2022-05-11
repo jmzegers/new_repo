@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pichangaSearch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BF016FA0"
+    tools:context=".Pichanga_search"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fighterListView"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.414" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Próximas pichangas"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/searchView"
+        app:layout_constraintStart_toStartOf="@+id/searchView" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="108sp"
+        android:layout_height="36sp"
+        android:layout_marginTop="28dp"
+        android:text="Filtrar por:"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/searchView"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="71dp"
+        android:layout_height="32dp"
+        android:text="Fecha"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner"
+        app:layout_constraintStart_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toTopOf="@+id/spinner" />
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/linearLayout2"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="90dp"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        tools:ignore="MissingConstraints">-->
+
+<!--        <Button-->
+<!--            android:id="@+id/from_search_to_misPichangas"-->
+<!--            android:layout_width="102dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:backgroundTint="@color/button_defect"-->
+<!--            android:text="Mis Pichangas"-->
+<!--            android:textSize="10sp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:strokeWidth="1sp" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/Buscar_pichangas"-->
+<!--            android:layout_width="101dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:backgroundTint="@color/button_selected"-->
+<!--            android:text="Buscar Pichangas"-->
+<!--            android:textSize="10sp"-->
+<!--            app:strokeWidth="1sp" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/from_search_to_crear"-->
+<!--            android:layout_width="102dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:backgroundTint="@color/button_defect"-->
+<!--            android:text="Crear Pichangas"-->
+<!--            android:textSize="10sp"-->
+<!--            app:strokeWidth="1sp" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/from_search_to_homepage"-->
+<!--            android:layout_width="102dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:backgroundTint="@color/button_defect"-->
+<!--            android:text="Inicio"-->
+<!--            android:textSize="10sp"-->
+<!--            app:strokeWidth="1sp" />-->
+<!--    </LinearLayout>-->
+
+    <EditText
+        android:id="@+id/searchView"
+        android:layout_width="296dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="92dp"
+        android:background="@color/button_defect"
+        android:hint="Search"
+        android:inputType="textFilter"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </EditText>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="108sp"
+        android:layout_height="36sp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="@+id/searchView"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
