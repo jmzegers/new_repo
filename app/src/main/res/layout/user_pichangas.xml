@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="userPichangasViewModel"
+            type="cl.uandes.pichangapp.ui.viewmodel.User.User_PichangasViewModel" />
+    </data>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -14,7 +24,8 @@
         android:layout_marginTop="8dp"
         android:scrollbars="vertical"
         app:layout_constraintTop_toBottomOf="@+id/spinner3"
-        tools:layout_editor_absoluteX="0dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints" />
 
     <androidx.constraintlayout.utils.widget.MockView
         android:id="@+id/PichangAPP"
@@ -144,4 +155,4 @@
         app:layout_constraintGuide_percent="0.34336525" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout></layout>

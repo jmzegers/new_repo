@@ -6,7 +6,7 @@
 
     <data>
         <variable
-            name="loginViewModel"
+            name="HomepageViewModel"
             type="cl.uandes.pichangapp.ui.viewmodel.User.HomepageViewModel" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout

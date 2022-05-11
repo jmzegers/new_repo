@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="createPichangasViewModel"
+            type="cl.uandes.pichangapp.ui.viewmodel.Utility.CreatePichangasViewModel" />
+    </data>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -93,7 +104,8 @@
         android:inputType="textMultiLine"
         android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/radioButton7"
-        tools:layout_editor_absoluteX="41dp" />
+        tools:layout_editor_absoluteX="41dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView23"
@@ -146,3 +158,4 @@
         app:layout_constraintStart_toStartOf="@+id/spinner2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
